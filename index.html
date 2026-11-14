@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surtidora de Aves 22 DR | El mejor pollo frito Doradito y Tostadito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Botón de Configuración (Superior Derecho) -->
+  <button id="btn-config" class="config-btn" title="Panel de Administración" aria-label="Configuración">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"></circle>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+    </svg>
+  </button>
+
+  <!-- Botón flotante de carrito -->
+  <button id="btn-cart-float" class="cart-float-btn" aria-label="Ver pedido">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="9" cy="21" r="1"></circle>
+      <circle cx="20" cy="21" r="1"></circle>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+    <span id="cart-badge" class="cart-badge">0</span>
+  </button>
+
+  <!-- Encabezado / Hero centrado -->
+  <header class="hero-header">
+    <div class="container hero-content">
+      <!-- Logotipo Minimalista Centrado -->
+      <div class="logo-wrapper">
+        <svg class="minimal-logo" viewBox="0 0 280 185" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Minimalista Surtidora de Aves 22 DR">
+          <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#D4AF37" />
+              <stop offset="50%" stop-color="#F6E27A" />
+              <stop offset="100%" stop-color="#C59B27" />
+            </linearGradient>
+          </defs>
+          <!-- Arco exterior minimalista -->
+          <path d="M 35 130 A 105 105 0 0 1 245 130" fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round" />
+          <path d="M 48 130 A 92 92 0 0 1 232 130" fill="none" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round" />
+          <!-- Línea base -->
+          <line x1="25" y1="130" x2="255" y2="130" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+          <!-- Llama minimalista -->
+          <path d="M 140 52 C 148 66, 156 76, 147 90 C 142 97, 134 96, 132 88 C 127 77, 135 64, 140 52 Z" fill="#F59E0B" />
+          <!-- Silueta geométrica estilizada de pollo -->
+          <path d="M 95 125 C 95 103, 118 95, 142 98 C 155 100, 165 92, 172 86 C 175 93, 173 99, 181 101 C 175 106, 173 115, 176 125 Z" fill="#C8102E" />
+          <!-- Texto Marca -->
+          <text x="140" y="154" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" letter-spacing="1.2">SURTIDORA DE AVES 22 DR</text>
+          <text x="140" y="173" text-anchor="middle" fill="#F6E27A" font-family="Playfair Display, serif" font-style="italic" font-size="11.5">El mejor pollo frito Doradito y Tostadito</text>
+        </svg>
+      </div>
+
+      <h1 class="welcome-title">Bienvenidos a Surtidora de Aves 22 de R, ¿en qué les podemos colaborar?</h1>
+      <p class="hero-subtitle">Tradición, sabor crujiente y atención directa en el sur de la ciudad.</p>
+
+      <!-- Líneas Directas de Domicilio -->
+      <div class="delivery-banner">
+        <span class="delivery-label">Líneas Directas de Domicilios:</span>
+        <div class="phone-cards">
+          <div class="phone-card">
+            <span class="phone-number" id="display-phone-1">322 223 6127</span>
+            <div class="phone-actions">
+              <a id="call-link-1" href="tel:+573222236127" class="btn btn-sm btn-outline">Llamar</a>
+              <a id="wa-link-1" href="https://wa.me/573222236127" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">WhatsApp</a>
+            </div>
+          </div>
+          <div class="phone-card">
+            <span class="phone-number" id="display-phone-2">313 453 9206</span>
+            <div class="phone-actions">
+              <a id="call-link-2" href="tel:+573134539206" class="btn btn-sm btn-outline">Llamar</a>
+              <a id="wa-link-2" href="https://wa.me/573134539206" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegación rápida -->
+      <nav class="quick-nav">
+        <a href="#seccion-reservas" class="btn btn-gold">Reservar Mesa</a>
+        <a href="#seccion-menu" class="btn btn-red">Ver Menú y Pedir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-layout">
+    <!-- SECCIÓN DE RESERVA DE MESAS -->
+    <section id="seccion-reservas" class="card-section reservation-section">
+      <div class="section-header">
+        <h2>Reserva de Mesas</h2>
+        <p>Asegura tu lugar en nuestro restaurante. Máximo <strong>4 personas</strong> por mesa.</p>
+      </div>
+
+      <!-- Indicadores de disponibilidad -->
+      <div class="availability-status-bar">
+        <div class="status-pill">
+          <span>Cupos Entre Semana (Lun - Vie):</span>
+          <strong id="weekday-counter">0 / 15</strong>
+        </div>
+        <div class="status-pill">
+          <span>Cupos Fin de Semana (Sáb - Dom):</span>
+          <strong id="weekend-counter">0 / 20</strong>
+        </div>
+      </div>
+
+      <form id="reservation-form" class="reservation-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="res-name">Nombre completo</label>
+            <input type="text" id="res-name" required placeholder="Ej. Carlos Rodríguez" />
+          </div>
+          <div class="form-group">
+            <label for="res-phone">Teléfono de contacto</label>
+            <input type="tel" id="res-phone" required placeholder="Ej. 310 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="res-day-type">Tipo de día</label>
+            <select id="res-day-type" required>
+              <option value="weekday">Entre Semana (Máx. 15 mesas)</option>
+              <option value="weekend">Fin de Semana (Máx. 20 mesas)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="res-date">Fecha</label>
+            <input type="date" id="res-date" required />
+          </div>
+          <div class="form-group">
+            <label for="res-time">Hora</label>
+            <input type="time" id="res-time" required />
+          </div>
+          <div class="form-group">
+            <label for="res-guests">Número de personas (Máx. 4)</label>
+            <input type="number" id="res-guests" min="1" max="4" value="2" required />
+            <small class="hint-text">Límite estricto de 4 personas por reserva.</small>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-red btn-block">Confirmar Reserva de Mesa</button>
+      </form>
+
+      <!-- Resultado de la reserva (controlado por booleanos) -->
+      <div id="reservation-feedback" class="reservation-feedback hidden" role="alert"></div>
+    </section>
+
+    <!-- SECCIÓN DE MENÚ COMPLETO -->
+    <section id="seccion-menu" class="card-section menu-section">
+      <div class="section-header">
+        <h2>Nuestro Menú</h2>
+        <p>Selecciona tus platos favoritos para agregar al pedido a domicilio o para recoger.</p>
+      </div>
+
+      <!-- Buscador y Filtros por Categoría -->
+      <div class="menu-controls">
+        <input type="search" id="menu-search" class="search-input" placeholder="Buscar plato, combo, bebida..." />
+        <div id="category-tabs" class="category-tabs"></div>
+      </div>
+
+      <!-- Contenedor de tarjetas del menú -->
+      <div id="menu-grid" class="menu-grid"></div>
+    </section>
+  </main>
+
+  <!-- PANEL LATERAL DEL CARRITO DE PEDIDOS -->
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Tu Pedido</h3>
+      <button id="btn-close-cart" class="close-btn" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="empty-cart-msg">Aún no has agregado productos a tu pedido.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total estimado:</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+      <div class="form-group">
+        <label for="order-type">Modalidad de entrega</label>
+        <select id="order-type">
+          <option value="Domicilio">Domicilio</option>
+          <option value="Recoger en restaurante">Recoger en restaurante</option>
+        </select>
+      </div>
+      <div class="form-group" id="address-group">
+        <label for="order-address">Dirección de entrega</label>
+        <input type="text" id="order-address" placeholder="Barrio, calle, número..." />
+      </div>
+      <div class="form-group">
+        <label for="order-customer">Tu nombre</label>
+        <input type="text" id="order-customer" placeholder="Nombre quien recibe" />
+      </div>
+      <div class="form-group">
+        <label for="order-phone-target">Enviar pedido a línea:</label>
+        <select id="order-phone-target">
+          <option value="1">Línea 1: 322 223 6127</option>
+          <option value="2">Línea 2: 313 453 9206</option>
+        </select>
+      </div>
+      <button id="btn-send-order" class="btn btn-whatsapp btn-block">Enviar Pedido por WhatsApp</button>
+    </div>
+  </aside>
+  <div id="cart-overlay" class="overlay hidden"></div>
+
+  <!-- MODAL DE CONTRASEÑA Y ADMINISTRACIÓN -->
+  <div id="admin-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="btn-close-modal" class="close-btn modal-close" aria-label="Cerrar">&times;</button>
+
+      <!-- Vista 1: Login con contraseña -->
+      <div id="admin-login-view">
+        <h3>Acceso de Configuración</h3>
+        <p>Ingresa la contraseña de administrador para gestionar el restaurante.</p>
+        <form id="admin-login-form">
+          <div class="form-group">
+            <label for="admin-password">Contraseña</label>
+            <input type="password" id="admin-password" required placeholder="••••••••••••" />
+          </div>
+          <p id="login-error" class="error-text hidden">Contraseña incorrecta. Inténtalo de nuevo.</p>
+          <button type="submit" class="btn btn-red btn-block">Ingresar</button>
+        </form>
+      </div>
+
+      <!-- Vista 2: Ventana de Bienvenido y Panel de Control -->
+      <div id="admin-dashboard-view" class="hidden">
+        <div class="admin-welcome-banner">
+          <h3>¡Bienvenido!</h3>
+          <p>Panel de administración de <strong>Surtidora de Aves 22 DR</strong></p>
+        </div>
+
+        <div class="admin-tabs">
+          <button type="button" class="admin-tab active" data-tab="tab-phones">Teléfonos</button>
+          <button type="button" class="admin-tab" data-tab="tab-reservations">Reservas</button>
+          <button type="button" class="admin-tab" data-tab="tab-prices">Precios del Menú</button>
+        </div>
+
+        <!-- Tab 1: Cambiar números telefónicos -->
+        <div id="tab-phones" class="admin-tab-panel">
+          <div class="form-group">
+            <label for="input-phone-1">Teléfono Domicilios 1</label>
+            <input type="text" id="input-phone-1" />
+          </div>
+          <div class="form-group">
+            <label for="input-phone-2">Teléfono Domicilios 2</label>
+            <input type="text" id="input-phone-2" />
+          </div>
+          <button type="button" id="btn-save-phones" class="btn btn-gold btn-block">Guardar Teléfonos</button>
+        </div>
+
+        <!-- Tab 2: Reiniciar reservas -->
+        <div id="tab-reservations" class="admin-tab-panel hidden">
+          <div class="admin-stats-box">
+            <p>Reservas entre semana: <strong id="admin-weekday-count">0</strong> / 15</p>
+            <p>Reservas fin de semana: <strong id="admin-weekend-count">0</strong> / 20</p>
+          </div>
+          <button type="button" id="btn-reset-reservations" class="btn btn-red btn-block">Reiniciar Todas las Reservas a 0</button>
+        </div>
+
+        <!-- Tab 3: Cambiar precios -->
+        <div id="tab-prices" class="admin-tab-panel hidden">
+          <div id="admin-prices-list" class="admin-prices-list"></div>
+          <button type="button" id="btn-save-prices" class="btn btn-gold btn-block">Guardar Cambios de Precios</button>
+        </div>
+
+        <p id="admin-toast" class="toast-msg hidden"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Surtidora de Aves 22 DR — El mejor pollo frito Doradito y Tostadito.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
